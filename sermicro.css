@@ -1,3 +1,21 @@
-header{
+body{
+  background-image: url('sermicro.jpg');
+  color: white;
+}
+.header{
   background: black;
+  color: white;
+}
+.titulo{
+  font-family: 'helveticaFamily', Arial, sans-serif;
+
+}
+.titulo1{
+  font-size: 30px;
+}
+.titulo2{
+  font-size: 25px;
+}
+.formulario{
+  font-size: 17px;
 }
