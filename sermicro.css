@@ -19,3 +19,13 @@ body{
 .formulario{
   font-size: 17px;
 }
+
+.logotipo{
+  display: inline-block;
+}
+.menu{
+  display: inline-block;
+}
+.menu li {
+  display: inline-block;
+}
