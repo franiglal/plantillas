@@ -1,31 +1,49 @@
 body{
   background-image: url('sermicro.jpg');
   color: white;
+  width: 900px;
+  margin: auto;
+
 }
+
 .header{
+
   background: black;
   color: white;
 }
-.titulo{
-  font-family: 'helveticaFamily', Arial, sans-serif;
 
+.titulo{
+
+  font-family: 'helveticaFamily', Arial, sans-serif;
+  padding: 20px;
 }
+
 .titulo1{
-  font-size: 30px;
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-bottom: 0;
 }
+
 .titulo2{
-  font-size: 25px;
+  font-size: 20px;
+  margin-top: 0;
 }
+
 .formulario{
   font-size: 17px;
+  margin-left: 35px;
 }
 
 .logotipo{
   display: inline-block;
 }
+
 .menu{
   display: inline-block;
 }
+
 .menu li {
+  font-size: 20px;
   display: inline-block;
+  margin-left: 15px;
 }
