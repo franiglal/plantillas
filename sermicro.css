@@ -10,6 +10,7 @@ body{
 
   background: black;
   color: white;
+  position: relative;
 }
 
 .titulo{
@@ -32,6 +33,10 @@ body{
 .formulario{
   font-size: 17px;
   margin-left: 35px;
+  margin-right:35px;
+  border: 3px solid black;
+  border-radius: 5px;
+
 }
 
 .logotipo{
@@ -40,6 +45,8 @@ body{
 
 .menu{
   display: inline-block;
+  position: absolute;
+  right: 50px;
 }
 
 .menu li {
@@ -50,12 +57,13 @@ body{
 
 .fondo{
   background-image: url('sermicro.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: black;
 
 }
 
-.formulario{
-  border-color: black;
+
+.formulario2{
+  margin-top: 40px;
+  margin-left: 40px;
+
 }
