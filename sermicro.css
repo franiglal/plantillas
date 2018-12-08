@@ -34,6 +34,7 @@ body{
   font-size: 17px;
   margin-left: 35px;
   margin-right:35px;
+  
   border: 3px solid black;
   border-radius: 5px;
 
@@ -47,12 +48,15 @@ body{
   display: inline-block;
   position: absolute;
   right: 50px;
+
 }
 
 .menu li {
   font-size: 20px;
   display: inline-block;
   margin-left: 15px;
+
+  
 }
 
 .fondo{
@@ -65,5 +69,30 @@ body{
 .formulario2{
   margin-top: 40px;
   margin-left: 40px;
+
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  position: relative;
+
+
+}
+.logosatec{
+  display: block;
+}
+.contacto{
+  display: inline-block;
+
+}
+.contacto a{
+    color: white;
+    text-decoration: none; 
+    display: inline-block;
+    position: relative;
+    left:  50px;
+    margin-left: 15px;
+    font-size: 20px;
 
 }
