@@ -28,18 +28,38 @@
       <h3 class = "titulo2">generador plantilla sermicro</h3>
     </section>
     <section id="formulario" class="formulario">
-      <div id="formulario2" class = "formulario2">
-      	oceane:<p id = "plantilla" ></p>
-      	Empresa:
-      	Nombre:
-      	Direccion:
-      	Telefono:
-      	Horario:
-      	Modelo:
-      	Aviso:
-      	Descripción:
-      	generar plantilla:
-      </div>
+      <form id="formulario2" class = "formulario2">
+      	<label for="oceane">Oceane:</label>
+      	<input type="text" required id="oceane" name="oceane"/>
+      	<label for="empresa">Empresa:</label>
+      	<input type="text" required id="empresa" name="empresa"/>
+      	<label for="nombre">Nombre:</label>
+      	<input type="text" required id="nombre" name="nombre"/>
+      	<label for="direccion">Dirección:</label>
+      	<input type="text" required id="direccion" name="direccion"/>
+      	<label for="telefono">Telefono:</label>
+      	<input type="number" required id="numero" name="numero"/>
+      	<label for="horario">Horario:</label>
+      	<input type="text" id="horario" name="horario"/>
+      	<label for="modelo">Modelo:</label>
+      	<input type="text" id="modelo" name="modelo"/>
+      	<div class = "aviso">
+      		<label for="smant">
+                <input type="radio" id="smat" checked name="aviso" value="smat"/> SMANT
+             </label>
+             <label for="sat">
+                <input type="radio" id="sat" name="aviso" value="sat"/> SATO1
+             </label>
+      	</div>
+      	<label for="urgente" class="urgente">
+      		<input type="checkbox" id="urgente" name="urgente" value="urgente"> Urgente (P1)
+      	</label>
+      	<div class="comentaros">
+      		<label type="descripcion">Descripción:</label>
+      		<textarea name ="descripcion" required id="descripcion" cols="30" rows="7"></textarea>
+      		<button class="button" id="generar">generar plantilla</button>
+      	</div>
+      </form>
     </section>
     <section id="plantillas" class="plantillas">
       <p id = "plantilla" ></p>
