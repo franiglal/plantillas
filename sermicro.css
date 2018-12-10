@@ -34,13 +34,14 @@ body{
   font-size: 17px;
   margin-left: 35px;
   margin-right:35px;
-  display: inline-block;
   border: 3px solid black;
   border-radius: 5px;
 
 }
 .formulario2{
-  display: inline-block;
+  margin-top: 40px;
+  margin-left: 40px;
+
 }
 
 .logotipo{
@@ -69,21 +70,17 @@ body{
 }
 
 
-.formulario2{
-  margin-top: 40px;
-  margin-left: 40px;
-
-}
-
 .footer{
   background-color: black;
   color: white;
   position: relative;
 
 
+
 }
 .logosatec{
-  display: block;
+  display: inline-block;
+  margin: 10px
 }
 .contacto{
   display: inline-block;
