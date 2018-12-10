@@ -23,13 +23,13 @@
       </nav>
     </header><!-- titulo-->
     <div id=fondo class=fondo>
-    <section id="titulo" class="titulo">
-      <h1 class = "titulo1">Sermicro</h1>
-      <h3 class = "titulo2">generador plantilla sermicro</h3>
-    </section>
-    <section id="formulario" class="formulario">
-      <form id="formulario2" class = "formulario2">
-      	<div id = "comumnas">
+      <section id="titulo" class="titulo">
+        <h1 class = "titulo1">Sermicro</h1>
+        <h3 class = "titulo2">generador plantilla sermicro</h3>
+      </section>
+      <section id="formulario" class="formulario">
+        <form id="formulario2" class = "formulario2">
+        <div id = "comumnas">
       		<p>
       			<label for="oceane">Oceane:</label>
       			<input type="text" required id="oceane" name="oceane"/>
@@ -48,7 +48,7 @@
       		</p>
       		<p>
       			<label for="telefono">Telefono:</label>
-      			<input type="number" required id="numero" name="numero"/>
+      			<input type="number" required id="telefono" name="numero"/>
       		</p>
       		<p>
       			<label for="horario">Horario:</label>
@@ -57,7 +57,7 @@
       		<p>
       			<label for="modelo">Modelo:</label>
       			<input type="text" id="modelo" name="modelo"/>
-      		</p>	
+      		</p>
       	</div>
       	<div class = "aviso">
       		<p>
@@ -82,7 +82,7 @@
       			<textarea name ="descripcion" required id="descripcion" cols="30" rows="7"></textarea>
       		</p>
       		<p>
-      			<button class="button" id="generar">generar plantilla</button>
+      			<input type="button" value="crear plantilla" id="creacion"/>
       		</p>
       	</div>
       </form>
@@ -90,6 +90,7 @@
     <section id="plantillas" class="plantillas">
       <p id = "plantilla" ></p>
     </section>
+      <script src="sermicro.js"></script>
 	</div>
   <footer id= "footer" class= "footer">
     <div id= "logotipo" class="logosatec">
@@ -98,7 +99,7 @@
     <div id= contacto class="contacto">
       <a href =""><strong>Telefono</strong> <span>900901400<span></span></a>
       <a href ="mailto:alberto.francisco@satec-es.com"><strong>E-mail</strong> <span>alberto.francisco@satec-es.com</span> </a>
-    </div>    
+    </div>
   </footer>
   </body>
 </html>
