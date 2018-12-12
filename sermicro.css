@@ -23,6 +23,7 @@ body{
   font-size: 35px;
   margin-bottom: 10px;
   margin-bottom: 0;
+  margin-top: 2px;
 }
 
 .titulo2{
@@ -59,14 +60,20 @@ body{
   font-size: 20px;
   display: inline-block;
   margin-left: 15px;
+}
 
-  
+.menu a {
+  color: orange;
+  text-decoration: none;
 }
 
 .fondo{
-  background-image: url('sermicro.jpg');
-  background-color: black;
 
+  background-color: black;
+  margin-bottom: 10px;
+}
+.formulario{
+  background-image: url('sermicro.jpg');
 }
 
 
@@ -88,8 +95,8 @@ body{
 }
 .contacto a{
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
     display: inline-block;
-    
+
 
 }
