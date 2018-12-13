@@ -20,15 +20,6 @@ var plantilla = document.getElementById("plantilla");
 
 
 creaccion.addEventListener("click", generarPlantilla);
-urgente.addEventListener("onclick", ponerAP1);
-
-function ponerAP1(){
-	console.log(urgente.checked);
-	if (urgente.checked) {
-		p1 = "P1 - ";
-		console.log("checked pulsado");
-	}
-}
 
 function generarPlantilla() {
 
@@ -39,9 +30,8 @@ function generarPlantilla() {
 		aviso = "SATS01";
 		console.log("telca sat");
 	}
-	
-	plantilla.innerHTML = "+++++++++++++++++++++++++++++++++++++++++++++++++++ <br />"
-	 + "<br /> asunto:" + p1 + " Oceane: " + oceane.value + " - " + empresa.value +  "<br />"
+
+	plantilla.innerHTML = "<br /> asunto:" + p1 + " Oceane: " + oceane.value + " - " + empresa.value +  "<br />"
 	 + "<br />" + " - nº de ticket de ORANGE: " + oceane.value
 	 + "<br />" + " - datos de cliente: <br />"
 	 + "    nombre: " + nombre.value  + "<br />"
