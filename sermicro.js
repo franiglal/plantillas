@@ -11,8 +11,8 @@ var telefono = document.getElementById("telefono")
 var horario = document.getElementById("horario");
 var modelo = document.getElementById("modelo");
 var aviso = "";
-var urgente = document.getElementById("urgente");
-var p1 ="";
+var urgente = document.getElementById('urgente').checked;
+var p1 = "";
 var descripcion = document.getElementById("descripcion");
 var creaccion = document.getElementById("creacion");
 var plantilla = document.getElementById("plantilla");
@@ -20,6 +20,17 @@ var plantilla = document.getElementById("plantilla");
 
 
 creaccion.addEventListener("click", generarPlantilla);
+urgente.addEventListener("change", activarP1, false);
+
+function activarP1(){
+	console.log("activado");
+
+	var activado = urgente.checked;
+	console.log(activado);
+	if(activado){
+		p1 = "P1 - ";
+	}
+}
 
 function generarPlantilla() {
 
