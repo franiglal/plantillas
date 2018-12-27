@@ -4,42 +4,54 @@
 
 
 var oceane = document.getElementById("oceane");
-var empresa = document.getElementById("empresa");
-var nombre = document.getElementById("nombre");
-var direccion = document.getElementById("direccion");
-var telefono = document.getElementById("telefono")
+var empresa = document.getElementById("incidencia");
+var nombre = document.getElementById("admin");
+var  = document.getElementById("fecha");
 var horario = document.getElementById("horario");
-var modelo = document.getElementById("modelo");
-var aviso = "";
-var urgente = document.getElementById('urgente').checked;
-var p1 = "";
-var descripcion = document.getElementById("descripcion");
-var creaccion = document.getElementById("creacion");
-var plantilla = document.getElementById("plantilla");
-
-
+var aviso = 1;
+var correo ="";
 
 creaccion.addEventListener("click", generarPlantilla);
-urgente.addEventListener("change", activarP1, false);
 
-function activarP1(){
-	console.log("activado");
-
-	var activado = urgente.checked;
-	console.log(activado);
-	if(activado){
-		p1 = "P1 - ";
-	}
-}
 
 function generarPlantilla() {
 
-	if (document.getElementById("smat").checked){
-		aviso = "SMANT";
+	//seleccionar tipo de escalado
+	if (document.getElementById("N1").checked){
+		correo = "escalado.obadirecto@telefonica.com";
+		aviso = 1;
 		console.log("tecla smant");
-	}else if (document.getElementById("sat").checked) {
-		aviso = "SATS01";
+	}else if (document.getElementById("N2").checked) {
+		aviso = 2;
+		correo = "responsable.obadirecto@telefonica.com";
 		console.log("telca sat");
+	}
+
+	//selecionar escalado
+	if (document.getElementById("directo").checked) {
+		if(aviso == 1){
+			correo = "escalado.obadirecto@telefonica.com";
+		}else{
+			correo = "responsable.obadirecto@telefonica.com";
+		}
+	}else if (document.getElementById("indirecto").checked) {
+		if(aviso == 1){
+			correo = "escalado.obadirecto@telefonica.com";
+		}else{
+			correo = "responsable.obadirecto@telefonica.com";
+		}
+	}else if (document.getElementById("AMLT").checked) {
+		if(aviso == 1){
+			correo = "escalado.obadirecto@telefonica.com";
+		}else{
+			correo = "responsable.obadirecto@telefonica.com";
+		}
+	}else if (document.getElementById("NEBA").checked) {
+		if(aviso == 1){
+			correo = "escalado.obadirecto@telefonica.com";
+		}else{
+			correo = "responsable.obadirecto@telefonica.com";
+		}
 	}
 
 	plantilla.innerHTML = "<br /> asunto:" + p1 + " Oceane: " + oceane.value + " - " + empresa.value +  "<br />"
