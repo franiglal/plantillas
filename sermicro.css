@@ -1,0 +1,126 @@
+body{
+
+  color: white;
+  width: 900px;
+  margin: auto;
+
+}
+
+.header{
+
+  background: black;
+  color: white;
+  position: relative;
+}
+
+.plantillas{
+    background: white;
+    color: black;
+    position: relative;
+    margin-left: 35px;
+    margin-right:35px;
+    border: 3px solid black;
+    border-radius: 5px;
+
+}
+
+.titulo{
+
+  font-family: 'helveticaFamily', Arial, sans-serif;
+  padding: 20px;
+}
+
+.titulo1{
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.titulo2{
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.formulario{
+  font-size: 17px;
+  margin-left: 35px;
+  margin-right:35px;
+  border: 3px solid black;
+  border-radius: 5px;
+
+}
+.formulario2{
+  margin-top: 40px;
+  margin-left: 40px;
+
+}
+
+.logotipo{
+  display: inline-block;
+}
+
+.menu{
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+
+}
+
+.menu li {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.menu a {
+  color: orange;
+  text-decoration: none;
+}
+
+.fondo{
+
+  background-color: black;
+  margin-bottom: 10px;
+}
+.formulario{
+  background-image: url('sermicro.jpg');
+}
+
+
+.footer{
+  background-color: black;
+  color: white;
+  position: relative;
+
+
+
+}
+.logosatec{
+  display: inline-block;
+  margin: 10px
+}
+.contacto{
+  display: inline-block;
+
+}
+.contacto a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+
+
+}
+.plantilla {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.obras{
+  background-color: black;
+  font-size: 35px;
+  margin-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 2px;
+  color: yellow;
+
+}

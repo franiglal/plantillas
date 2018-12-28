@@ -31,7 +31,15 @@ function generarPlantilla() {
 		console.log("telca sat");
 	}
 
-	plantilla.innerHTML = "<br /> asunto:" + p1 + " Oceane: " + oceane.value + " - " + empresa.value +  "<br />"
+	if (document.getElementById("p1").checked){
+		p1 = "P1";
+
+	}else if (document.getElementById("sat").checked) {
+		p1 = "P2";
+
+	}
+
+	plantilla.innerHTML = "<br /><strong>asunto: </strong>" + p1 + " Oceane: " + oceane.value + " - " + empresa.value +  "<br />"
 	 + "<br />" + " - nº de ticket de ORANGE: " + oceane.value
 	 + "<br />" + " - datos de cliente: <br />"
 	 + "    nombre: " + nombre.value  + "<br />"

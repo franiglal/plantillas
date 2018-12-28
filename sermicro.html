@@ -34,6 +34,7 @@
         <h3 class = "titulo2">generador plantilla sermicro</h3>
       </section>
       <section id="formulario" class="formulario">
+        <strong>
         <form id="formulario2" class = "formulario2">
         <div id = "comumnas">
       		<p>
@@ -75,13 +76,16 @@
         		</label>
         	</p>
       	</div>
-      	<!-- <div id = "urgente">
+        <div class = "urgencia">
       		<p>
-      			<label for="urgente" class="urgente">
-      				<input type="checkbox" id="urgente" name="urgente" value="urgente"> Urgente (P1)
-      			</label>
-      		</p>
-      	</div> -->
+      			<label for="p1">
+          		<input type="radio" id="p1" checked name="urgencia" value="p1"/> P1
+         		</label>
+         		<label for="p2">
+          		<input type="radio" id="p2" name="urgencia" value="p2"/> P2
+        		</label>
+        	</p>
+      	</div>
       	<div class="comentaros">
       		<p>
       			<label type="descripcion">Descripción:</label>
@@ -92,6 +96,7 @@
       		</p>
       	</div>
       </form>
+    </strong>
     </section>
     <section id="plantillas" class="plantillas">
       <p id = "plantilla" class= "plantilla"></p>
