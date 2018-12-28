@@ -2,9 +2,9 @@
 <html land="es">
   <head>
     <meta charset="utf-8">
-    <title>Tesa - generacion de plantillas</title>
+    <title>Sermicro - generacion de plantillas</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="tesa.css">
+    <link rel="stylesheet" href="sermicro.css">
   </head>
   <body>
     <header id="header" class="header"><!-- portada     -->
@@ -30,8 +30,8 @@
     </header><!-- titulo-->
     <div id=fondo class=fondo>
       <section id="titulo" class="titulo">
-        <h1 class = "titulo1">Telefónica</h1>
-        <h3 class = "titulo2">generador plantillas TESA</h3>
+        <h1 class = "titulo1">Sermicro</h1>
+        <h3 class = "titulo2">generador plantilla sermicro</h3>
       </section>
       <section id="formulario" class="formulario">
         <form id="formulario2" class = "formulario2">
@@ -41,53 +41,51 @@
       			<input type="text" required id="oceane" name="oceane"/>
       		</p>
       		<p>
-      			<label for="incidencia:">Incidencia TESA:</label>
-      			<input type="text" required id="incidencia" name="incidencia"/>
+      			<label for="empresa">Empresa:</label>
+      			<input type="text" required id="empresa" name="empresa"/>
       		</p>
       		<p>
-      			<label for="admin">Administrativo:</label>
-      			<input type="text" required id="admin" name="admin"/>
+      			<label for="nombre">Nombre:</label>
+      			<input type="text" required id="nombre" name="nombre"/>
       		</p>
       		<p>
-      			<label for="fecha">Fecha:</label>
-      			<input type="text" required id="fecha" name="fecha"/>
+      			<label for="direccion">Dirección:</label>
+      			<input type="text" required id="direccion" name="direccion"/>
       		</p>
       		<p>
-      			<label for="horario">Hora:</label>
+      			<label for="telefono">Telefono:</label>
+      			<input type="number" required id="telefono" name="numero"/>
+      		</p>
+      		<p>
+      			<label for="horario">Horario:</label>
       			<input type="text" id="horario" name="horario"/>
       		</p>
-
+      		<p>
+      			<label for="modelo">Modelo:</label>
+      			<input type="text" id="modelo" name="modelo"/>
+      		</p>
       	</div>
       	<div class = "aviso">
       		<p>
-      			<label for="N1">
-          		<input type="radio" id="N1" checked name="aviso" value="N1"/> N1
+      			<label for="smant">
+          		<input type="radio" id="smat" checked name="aviso" value="smat"/> SMANT
          		</label>
-         		<label for="N2">
-          		<input type="radio" id="N2" name="aviso" value="N2"/> N2
+         		<label for="sat">
+          		<input type="radio" id="sat" name="aviso" value="sat"/> SATO1
         		</label>
         	</p>
       	</div>
-        <div class = "circuito">
-          <p>
-            <label for="directo">
-              <input type="radio" id="directo" checked name="circuito" value="directo"/> directo
-            </label>
-            <label for="indirecto">
-              <input type="radio" id="indirecto" name="circuito" value="indirecto"/> indirecto
-            </label>
-            <label for="AMLT">
-              <input type="radio" id="AMLT" name="circuito" value="AMLT"/> AMLT
-            </label>
-            <label for="NEBA">
-              <input type="radio" id="NEBA" name="circuito" value="NEBA"/> NEBA
-            </label>
-          </p>
-        </div>
+      	<!-- <div id = "urgente">
+      		<p>
+      			<label for="urgente" class="urgente">
+      				<input type="checkbox" id="urgente" name="urgente" value="urgente"> Urgente (P1)
+      			</label>
+      		</p>
+      	</div> -->
       	<div class="comentaros">
       		<p>
-      			<label type="causa">Causa:</label>
-      			<textarea name ="causa" required id="causa" cols="30" rows="2"></textarea>
+      			<label type="descripcion">Descripción:</label>
+      			<textarea name ="descripcion" required id="descripcion" cols="30" rows="7"></textarea>
       		</p>
       		<p>
       			<input type="button" value="crear plantilla" id="creacion"/>
@@ -98,7 +96,7 @@
     <section id="plantillas" class="plantillas">
       <p id = "plantilla" class= "plantilla"></p>
     </section>
-      <script src="tesa.js"></script>
+      <script src="sermicro.js"></script>
 	</div>
   <footer id= "footer" class= "footer">
     <div id= "logotipo" class="logosatec">
