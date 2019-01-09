@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Personalizados - generacion de plantillas</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="sermicro.css">
+    <link rel="stylesheet" href="personalizados.css">
   </head>
   <body>
     <header id="header" class="header"><!-- portada     -->
@@ -25,11 +25,76 @@
           <li>
             <a href="https://www.aprendaredes.com/cgi-bin/ipcalc/ipcalc_cgi">Calculadora</a>
           </li>
+          <li>
+            <a href="http://172.21.6.22:8080">ZEUS</a>
+          </li>
         </ul>
       </nav>
     </header><!-- titulo-->
     <body>
-      <h1 class = obras >PAGINA EN OBRAS</h1>
+      <div id=fondo class=fondo>
+        <section id="titulo" class="titulo">
+          <h1 class = "titulo1">Personalizados</h1>
+          <h3 class = "titulo2">generador plantillas clientes personalizados</h3>
+        </section>
+        <section id="formulario" class="formulario">
+          <form id="formulario2" class = "formulario2">
+          <div id = "comumnas">
+            <strong>
+            <p>
+              <label for="oceane">Oceane:</label>
+              <input type="text" required id="oceane" name="oceane"/>
+            </p>
+            <p>
+              <label for="sede">Sede:</label>
+              <input type="text" required id="sede" name="sede"/>
+            </p>
+            <p>
+              <label for="servicio">Servicio:</label>
+              <input type="text" required id="servicio" name="servicio"/>
+            </p>
+            <p>
+              <label for="nemonico">Mnemonico:</label>
+              <input type="text" required id="nemonico" name="nemonico"/>
+            </p>
+            <p>
+              <label for="clientes">Cliente:</label>
+              <select name="cliente">
+                <option selected value="wurth" id="wurth">WURTH</option>
+                <option value="guzman" id="guzman">GUZMÁN GASTRONOMÍA</option>
+                <option value="otis" id="otis">GRUPO OTIS</option>
+                <option value="cefarma" id="cefarma">CEFARMA</option>
+                <option value="dgel" id="dgel">SGEL</option>
+                <option value="kiabi" id="kiabi">K.S.C.E</option>
+                <option value="axa" id="axa">AXA</option>
+                <option value="worten" id="worten">WORTEN</option>
+                <optgroup label="ENGIE">
+                  <option value="cofely" id="cofely">COFELY ESPAÑA</option>
+                  <option value="engie" id="engie">ENGIE</option>
+                  <option value="grespo" id="grespo">CRESPO Y BLASCO</option>
+                  <option value="axima" id="axima">AXIMA</option>
+                  <option value="energy" id="energy">SUEZ ENERGY SERVICES</option>
+                </optgroup>
+              </select>
+            </p>
+          </div>
+          <div class="sintoma">
+            <p>
+              <label type="sintoma">Síntoma:</label>
+              <textarea name ="sintoma" required id="sintoma" cols="30" rows="2"></textarea>
+            </p>
+            <p>
+              <input type="button" value="crear plantilla" id="creacion"/>
+            </p>
+            </strong>
+          </div>
+        </form>
+      </section>
+      <section id="plantillas" class="plantillas">
+        <p id = "plantilla" class= "plantilla"></p>
+      </section>
+        <script src="personalizados.js"></script>
+    </div>
       <footer id= "footer" class= "footer">
         <div id= "logotipo" class="logosatec">
           <img src="satec.png" width = "70" height="70" alt ="satec">
