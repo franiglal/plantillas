@@ -60,11 +60,17 @@ function generarPlantilla() {
 		}else{
 			correo = "responsable.neba@telefonica.com";
 		}
+	}else if (document.getElementById("ORLA").checked) {
+		circuito = "ORLAE";
+		if(aviso == 1){
+			correo = "EscaladoN1.circuitos@telefonica.com";
+		}else{
+			correo = "josefernando.chonatavillamarin@telefonica.com";
+		}
 	}
-
-	plantilla.innerHTML = "<strong>Correo a enviar: </strong>" + correo 
+	plantilla.innerHTML = "<strong>Correo a enviar: </strong>" + correo
 	 + "<br /> <br /><strong>asunto:</strong> ORANGE # " + nivel + " # " + admin.value + " // " + circuito + " // " + incidencia.value + " // " + oceane.value
-	 + "<br /> <br />Tenemos abierta una incidencia por " + causa.value + " con el número administrativo " + admin.value 
+	 + "<br /> <br />Tenemos abierta una incidencia por " + causa.value + " con el número administrativo " + admin.value
 	 + " ,  el número de secuencia en Telefónica " + incidencia.value + " y el número de incidencia de Orange " + oceane.value + "."
  	 + "<br /><br/ > La incidencia está abierta desde el pasado día " + fecha.value + " a las " + horario.value + ", y todavía no hemos recibido información alguna por parte de los técnicos de Telefónica."
      + "<br /><br /> Necesitamos que se revise lo antes posible, ya que llevamos mas de 24 horas con la incidencia abierta."

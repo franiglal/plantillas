@@ -9,7 +9,7 @@ var servicio = document.getElementById("servicio");
 var nemonico = document.getElementById("nemonico");
 var causa = document.getElementById("causa");
 var sintoma = document.getElementById("sintoma");
-
+var creaccion = document.getElementById("creacion");
 
 creaccion.addEventListener("click", generarPlantilla);
 
