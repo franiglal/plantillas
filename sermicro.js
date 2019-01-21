@@ -39,7 +39,9 @@ function generarPlantilla() {
 
 	}
 
-	plantilla.innerHTML = "<br /><strong>asunto: </strong>" + p1 + " Oceane: " + oceane.value + " - " + empresa.value +  "<br />"
+	plantilla.innerHTML = "<strong>Correo a enviar: </strong>" + " coordinacion.orange.cpe@sermicro; gestion.servicedesk@sermicro.com" + " "
+	 +"<br /><strong>CC: </strong>scesoporten2.es@orange.com; "
+	 +"<br /><strong>asunto: </strong>" + p1 + " Oceane: " + oceane.value + " - " + empresa.value +  "<br />"
 	 + "<br />" + " - nº de ticket de ORANGE: " + oceane.value
 	 + "<br />" + " - datos de cliente: <br />"
 	 + "    nombre: " + nombre.value  + "<br />"
